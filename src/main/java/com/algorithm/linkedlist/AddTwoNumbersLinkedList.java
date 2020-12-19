@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.linkedlist;
 
 /**
  You are given two linked lists representing two non-negative numbers. The digits are
@@ -14,7 +14,7 @@ public class AddTwoNumbersLinkedList {
      *  runtime: O(N * N -1)
      *  space: O(2) //return indexes
      */
-    public static ListNode addTwoLists(ListNode l1, ListNode l2) {
+    public static com.algorithm.linkedlist.ListNode addTwoLists(com.algorithm.linkedlist.ListNode l1, com.algorithm.linkedlist.ListNode l2) {
 
         String l1Str = recursive(l1);
         String l2Str = recursive(l2);
@@ -33,8 +33,8 @@ public class AddTwoNumbersLinkedList {
             l2Str = paddingZeros(l2Str, diff);
         }
 
-        ListNode returnNote = null;
-        ListNode previousNode = null;
+        com.algorithm.linkedlist.ListNode returnNote = null;
+        com.algorithm.linkedlist.ListNode previousNode = null;
 
         int carry = 0;
         String totalStr = "";
@@ -50,16 +50,16 @@ public class AddTwoNumbersLinkedList {
             int remainder = digitTotal%10 ;
 
             if(returnNote == null) {
-                returnNote = new ListNode(remainder, null);
+                returnNote = new com.algorithm.linkedlist.ListNode(remainder, null);
                 previousNode = returnNote;
             } else {
-                previousNode.next = new ListNode(remainder, null);
+                previousNode.next = new com.algorithm.linkedlist.ListNode(remainder, null);
                 previousNode = previousNode.next;
             }
         }
 
         if(carry > 0) {
-            previousNode.next = new ListNode(carry, null);
+            previousNode.next = new com.algorithm.linkedlist.ListNode(carry, null);
         }
 
         return returnNote;
@@ -71,7 +71,7 @@ public class AddTwoNumbersLinkedList {
         return numberStr;
     }
 
-    private static String recursive(ListNode node) {
+    private static String recursive(com.algorithm.linkedlist.ListNode node) {
         if(node == null) {
             return "";
         } else {

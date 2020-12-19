@@ -1,11 +1,11 @@
-package com.algorithm;
+package com.algorithm.linkedlist;
 
 public class AddTwoNumbers {
 
     public AddTwoNumbers() {
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public com.algorithm.linkedlist.ListNode addTwoNumbers(com.algorithm.linkedlist.ListNode l1, com.algorithm.linkedlist.ListNode l2) {
 
         String l1Str = listNodeToString(l1);
         String l2Str = listNodeToString(l2);
@@ -20,8 +20,8 @@ public class AddTwoNumbers {
             l2Str = paddingZeros(l2Str, lengthDiff);
         }
 
-        ListNode returnNote = null;
-        ListNode previousNode = null;
+        com.algorithm.linkedlist.ListNode returnNote = null;
+        com.algorithm.linkedlist.ListNode previousNode = null;
 
         int carry = 0;
         for (int i = bigCount - 1; i >= 0; i--) {
@@ -35,15 +35,15 @@ public class AddTwoNumbers {
             int remainder = digitTotal % 10;
 
             if (returnNote == null) {
-                returnNote = new ListNode(remainder, null);
+                returnNote = new com.algorithm.linkedlist.ListNode(remainder, null);
                 previousNode = returnNote;
             } else {
-                previousNode.next = new ListNode(remainder, null);
+                previousNode.next = new com.algorithm.linkedlist.ListNode(remainder, null);
                 previousNode = previousNode.next;
             }
         }
         if (carry > 0) {
-            previousNode.next = new ListNode(carry, null);
+            previousNode.next = new com.algorithm.linkedlist.ListNode(carry, null);
         }
         return returnNote;
     }
@@ -54,7 +54,7 @@ public class AddTwoNumbers {
         return numberStr;
     }
 
-    private String listNodeToString(ListNode node) {
+    private String listNodeToString(com.algorithm.linkedlist.ListNode node) {
         if (node == null) {
             return "";
         } else {
@@ -63,19 +63,3 @@ public class AddTwoNumbers {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
