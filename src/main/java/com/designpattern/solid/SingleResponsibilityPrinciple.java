@@ -1,7 +1,7 @@
 package com.designpattern.solid;
 
 /**
- 1) A class should have just one reason to change.
+ 1) A class should have just one and only reason to change.
  2) Every class is responsible for a single aspect/part of the functionality
  3) goal of this principle is to reduce complexity and no monolith code
  */

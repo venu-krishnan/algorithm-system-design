@@ -38,6 +38,7 @@ class CreditCard implements PaymentMethod {
 
 // Payment class is closed for any direct implementation of PaymentMethod,
 // but open for extension via PaymentMethod interface for any new implementation
+//adding new PaymentMethod doesnt require changing existing classes
 class Payment {
 
     public Payment(PaymentMethod paymentMethod) {
