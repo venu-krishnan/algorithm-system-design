@@ -18,7 +18,7 @@ class MySqlDB implements Database {
 }
 
 //Bad implementation
-//because high level(Report) and low-level(MySqlDB) are tightly dependent
+//because high level(Report) and low-level(MySqlDB) are tightly coupled
 class ReportBadImplementation {
     public void save(){
         MySqlDB db = new MySqlDB();
