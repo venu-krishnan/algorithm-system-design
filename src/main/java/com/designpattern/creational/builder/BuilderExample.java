@@ -1,7 +1,7 @@
 package com.designpattern.creational.builder;
 
 /**
- * 1) GOF says : This patterns lets to construct complex objects step by step
+ * 1) GOF : This patterns lets to construct complex objects step by step
  * 2) When the object creation is complex, this pattern separates out the instantiation process
  *      by using another object (a builder) to construct the object.
  * 3) Although GOF uses abstraction to build complex object,
