@@ -7,13 +7,11 @@ package com.designpattern.structural.decorator;
  * 3) Composition is preferred over inheritance to reduce overhead
  *      of having number of subclasses with decorator behaviours
  * 4) A decorator, delegates it to wrapped object(wrapee) and does the additional behaviours too
- *
+ * 5) Single Responsibility Principle
  */
 public class DecoratorExample {
 
     public static void main(String[] args) {
-
-        System.out.println("test");
 
         //Object that to be decorated
         Notifier notifier = new Notifier();
