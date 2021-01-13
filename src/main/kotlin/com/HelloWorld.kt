@@ -1,5 +1,5 @@
 package com
 
-fun helloMain(args: Array<String>) {
+fun main() {
     println("Hello world kotlin")
 }

@@ -13,10 +13,10 @@ public class MergeTwoSortedLists {
      * space: O(1)
      **
      */
-    public static com.algorithm.linkedlist.ListNode mergeTwoLists(com.algorithm.linkedlist.ListNode l1, com.algorithm.linkedlist.ListNode l2) {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
-        com.algorithm.linkedlist.ListNode returnNode = new com.algorithm.linkedlist.ListNode(0, null);
-        com.algorithm.linkedlist.ListNode traverseNode = returnNode;
+        ListNode returnNode = new ListNode(0, null);
+        ListNode traverseNode = returnNode;
         while(l1 != null || l2 != null) {
             if(l1 != null && l2 != null) {
                 if (l1.val < l2.val) {
