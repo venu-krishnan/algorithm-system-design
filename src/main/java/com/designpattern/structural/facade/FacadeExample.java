@@ -8,11 +8,16 @@ package com.designpattern.structural.facade;
  * 4) Facade provides option to have implementation loosely coupled to
  *      3rd party library via simple interface
  *
- *
  */
 public class FacadeExample {
 
     public static void main(String[] args) {
+
+        //Facade process method encapsulates and hides series of steps
+        // by exposing a simple interface
+        OrderService orderService = new OrderServiceFacade();
+        //only process() method is exposed which internally calls series of steps
+        orderService.process(100);
 
     }
 }

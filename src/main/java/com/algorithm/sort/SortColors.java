@@ -1,4 +1,4 @@
-package com.algorithm.sorting;
+package com.algorithm.sort;
 
 /**
  * Given an array nums with n objects colored red, white, or blue,

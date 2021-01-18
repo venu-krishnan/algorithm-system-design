@@ -1,4 +1,4 @@
-package com.algorithm.sorting;
+package com.algorithm.sort;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

@@ -8,7 +8,8 @@ package com.designpattern.structural.proxy;
  * 4) When to use this?
  *  When there is a heavy object that requires significant resources while initialize,
  *  then a proxy can be used as intermediate until the real need to invoke heavy object
- * 5) proxy can be used as interceptor to add additional behaviour to original object
+ * 5) Proxy usually manages the lifecycle of its service object on its own.
+ * 6) proxy can be used as interceptor to add additional behaviour to original object
  */
 public class ProxyExample {
 

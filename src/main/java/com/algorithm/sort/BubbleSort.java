@@ -1,6 +1,4 @@
-package com.algorithm.sorting;
-
-import java.util.Hashtable;
+package com.algorithm.sort;
 
 
 public class BubbleSort {
